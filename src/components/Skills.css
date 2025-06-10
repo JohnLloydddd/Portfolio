@@ -1,0 +1,216 @@
+#skills {
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 80px;
+}
+
+.skills {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.skills-box {
+    transition: transform 0.3s ease;
+}
+
+.skills-box:hover {
+    transform: translateY(-5px);
+}
+
+.skills-box h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.skills-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-box ul li {
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.skills-box ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+}
+
+.custom-progress {
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar {
+    background-color: #007bff !important;
+    transition: width 1s ease-in-out;
+}
+
+.skill-item {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skill-item:nth-child(1) { animation-delay: 0.1s; }
+.skill-item:nth-child(2) { animation-delay: 0.2s; }
+.skill-item:nth-child(3) { animation-delay: 0.3s; }
+.skill-item:nth-child(4) { animation-delay: 0.4s; }
+.skill-item:nth-child(5) { animation-delay: 0.5s; }
+.skill-item:nth-child(6) { animation-delay: 0.6s; }
+.skill-item:nth-child(7) { animation-delay: 0.7s; }
+.skill-item:nth-child(8) { animation-delay: 0.8s; }
+
+.technical-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.technical-item {
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.bullet {
+    color: #007bff;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+}
+
+.skills-title {
+    color: white;
+    font-size: 2.5rem;
+    position: relative;
+    font-weight: 1000;
+    padding-top: 1rem;
+    margin-bottom: 1.5rem !important;    
+}
+
+.coding-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 0.5rem;
+   
+  
+}
+
+
+.coding-item {
+    background: rgba(0, 38, 77, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 123, 255, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    height: 150px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.soft-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.soft-item {
+    background: rgba(0, 38, 77, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 123, 255, 0.2);
+    border-radius: 15px;
+    padding: 1.2rem;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    height: 80px; /* Fixed height */
+}
+
+.coding-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-icon {
+    color: #007bff;
+    font-size: 2rem;
+}
+
+.skill-name {
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Add responsive adjustments */
+@media (max-width: 768px) {
+    .coding-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .soft-skills {
+        grid-template-columns: 1fr;
+    }
+}
