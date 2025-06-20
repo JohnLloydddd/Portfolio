@@ -12,18 +12,21 @@ const Projects = () => {
             description: "A system that tracks classroom occupancy and displays real-time availability through a web interface.",
             technologies: ["Python", "HTML/CSS", "Arduino"],
             image: proj1,
+            github: "https://github.com/JohnLloydddd/Classroom-Monitoring-System"
         },
         {
             title: "Student Information System",
             description: "A system for managing student records, including registration, data updates, search functionality, and printable reports.",
             technologies: ["PHP", "MySQL"],
             image: proj2,
+            github: "https://github.com/JohnLloydddd/Student-Information-System"
         },
         {
             title: "School Landing Page",
             description: "A user-friendly landing page for a school, featuring responsive design and interactive elements to enhance user experience.",
             technologies: ["HTML/CSS", "JavaScript"],
             image: proj3,
+            github: "https://github.com/JohnLloydddd/School-Landing-Page"
         }
     ];
 
@@ -34,20 +37,28 @@ const Projects = () => {
                 <Row className="g-4">
                     {projects.map((project, index) => (
                         <Col lg={4} md={6} key={index}>
-                            <div className="project-card">
-                                <div className="project-image">
-                                    <img src={project.image} alt={project.title} />
-                                </div>
-                                <div className="project-content">
-                                    <h3>{project.title}</h3>
-                                    <p>{project.description}</p>
-                                    <div className="technologies">
-                                        {project.technologies.map((tech, i) => (
-                                            <span key={i} className="tech-tag">{tech}</span>
-                                        ))}
+                            <a
+                                href={project.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="project-card-link"
+                                style={{ textDecoration: 'none', color: 'inherit' }}
+                            >
+                                <div className="project-card">
+                                    <div className="project-image">
+                                        <img src={project.image} alt={project.title} />
+                                    </div>
+                                    <div className="project-content">
+                                        <h3>{project.title}</h3>
+                                        <p>{project.description}</p>
+                                        <div className="technologies">
+                                            {project.technologies.map((tech, i) => (
+                                                <span key={i} className="tech-tag">{tech}</span>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </Col>
                     ))}
                 </Row>
