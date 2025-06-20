@@ -45,8 +45,8 @@ To get a local copy up and running, follow these steps:
 ## Author
 
 - John Lloyd Marasigan
-- [LinkedIn](https://www.linkedin.com/in/yourprofile)
-- [GitHub](https://github.com/yourusername)
+- [LinkedIn](https://www.linkedin.com/in/john-lloyd-marasigan-8a55b4369)
+- [GitHub](https://github.com/JohnLloydddd)
 
 ## License
 
