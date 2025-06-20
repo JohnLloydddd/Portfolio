@@ -2,6 +2,9 @@
 
 This is a personal portfolio website built with React. It showcases my skills, projects, and background.
 
+![Screenshot (121)](https://github.com/user-attachments/assets/58a5994d-bba6-4d6d-ac49-96c82208b4bb)
+
+
 ## Features
 
 - **Home Page**: An introduction to who I am, including my background, skills, and interests.
@@ -41,9 +44,9 @@ To get a local copy up and running, follow these steps:
 
 ## Author
 
-- Your Name
-- [Your LinkedIn](https://www.linkedin.com/in/yourprofile)
-- [Your GitHub](https://github.com/yourusername)
+- John Lloyd Marasigan
+- [LinkedIn](https://www.linkedin.com/in/yourprofile)
+- [GitHub](https://github.com/yourusername)
 
 ## License
 
